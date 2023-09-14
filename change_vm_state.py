@@ -18,6 +18,8 @@ def change_state(vm_id: str, target_state: str):
         email=os.getenv('EMAIL'),
         password=os.getenv('PASSWORD')
     )
+    user_auth.login()
+
     vm_controller = VmController(
         user_auth=user_auth,
         vm_id=vm_id

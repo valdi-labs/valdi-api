@@ -54,4 +54,4 @@ def start_vm(access_token, vm_id):
         response.raise_for_status()
         return response.json()
     except Exception as e:
-        print(f'Stopping instance failed: {e}')
+        print(f'Starting instance failed: {e}')
